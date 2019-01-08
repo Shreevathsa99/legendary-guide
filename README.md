@@ -1,2 +1,2 @@
-# legendary-guide
-c programs are legend
+# legend-guide
+c programs are legendary
