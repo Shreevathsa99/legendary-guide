@@ -32,19 +32,24 @@ void printLine(int nCol, char pattern){
 }
 
 void printStar(int nLine, char pattern){
+	int col;
+
 	for(int i = 0; i < nLine; i++){
-		for(int j = 0; j < i+1; j++){
-			printf("%c ", pattern);
-		}
-		printf("\n");
+		//for(int j = 0; j < i+1; j++){
+		//	printf("%c ", pattern);
+		//}
+		//printf("\n");
+		col = i + 1;
+		printLine(col, pattern);
 	}
 }
 
 void printRect(int nLine, int nCol, char pattern){
 	for(int i = 0; i < nLine; i++){
-		for(int j = 0; j < nCol; j++){
-			printf("%c ", pattern);
+		//for(int j = 0; j < nCol; j++){
+		//	printf("%c ", pattern);
+		printLine(nCol, pattern);
 		}
 		printf("\n");
 	}
-}
+
